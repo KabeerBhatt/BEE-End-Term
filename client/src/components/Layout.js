@@ -29,11 +29,12 @@ const Layout = ({ children }) => {
       icon: "fa-solid fa-list",
     },
 
-    {
-      name: "Profile",
-      path: `/doctor/profile/${user?._id}`,
-      icon: "fa-solid fa-user",
-    },
+    // {
+    //   name: "Booking",
+    //   path:"/doctor/book-appointment/63e9ceed12f7dbc277649c90",
+    //   // path: `/doctor/profile/${user?._id}`,
+    //   icon: "fa-solid fa-user",
+    // },
   ];
   // =========== doctor menu ===============
 
@@ -49,15 +50,15 @@ const Layout = ({ children }) => {
         <div className="layout">
           <div className="sidebar">
             <div className="logo">
-              <h6 className="text-light">DOC APP</h6>
+              <h6 className="text-light">GAS BOOKING APP</h6>
               <hr />
             </div>
             <div className="menu">
-              {SidebarMenu.map((menu) => {
+              {SidebarMenu.map((menu, idx) => {
                 const isActive = location.pathname === menu.path;
                 return (
                   <>
-                    <div className={`menu-item ${isActive && "active"}`}>
+                    <div key = {idx} className={`menu-item ${isActive && "active"}`}>
                       <i className={menu.icon}></i>
                       <Link to={menu.path}>{menu.name}</Link>
                     </div>
@@ -79,10 +80,11 @@ const Layout = ({ children }) => {
                     navigate("/notification");
                   }}
                 >
-                  <i class="fa-solid fa-bell"></i>
+                  <i className="fa-solid fa-bell"></i>
                 </Badge>
 
-                <Link to="/profile">{user?.name}</Link>
+                {/* <Link to="/doctor/book-appointment/63e9ceed12f7dbc277649c90">{user?.name}</Link> */}
+                <b>{user?.name}</b>
               </div>
             </div>
             <div className="body">{children}</div>

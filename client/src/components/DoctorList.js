@@ -11,17 +11,17 @@ const DoctorList = ({ doctor }) => {
         onClick={() => navigate(`/doctor/book-appointment/${doctor._id}`)}
       >
         <div className="card-header">
-          Dr. {doctor.firstName} {doctor.lastName}
+           {doctor.firstName} {doctor.lastName}
         </div>
         <div className="card-body">
           <p>
-            <b>Specialization</b> {doctor.specialization}
+            <b>Gas Type</b> {doctor.specialization}
           </p>
           <p>
-            <b>Experience</b> {doctor.experience}
+            <b>Address</b> {doctor.address}
           </p>
           <p>
-            <b>Fees Per Cunsaltation</b> {doctor.feesPerCunsaltation}
+            <b>Price</b> {doctor.feesPerCunsaltation}
           </p>
           <p>
             <b>Timings</b> {doctor.timings[0]} - {doctor.timings[1]}

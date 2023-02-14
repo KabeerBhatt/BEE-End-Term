@@ -3,12 +3,15 @@ const colors = require("colors");
 const moragan = require("morgan");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
+const { default: mongoose } = require("mongoose");
 
 //dotenv conig
 dotenv.config();
 
 //mongodb connection
 connectDB();
+
+mongoose.connect("mongodb+srv://server:atcZoe8Z73kIAf5M@cluster0.ssyaslf.mongodb.net/?retryWrites=true&w=majority")
 
 //rest obejct
 const app = express();

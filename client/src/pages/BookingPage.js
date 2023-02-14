@@ -105,7 +105,7 @@ const BookingPage = () => {
         {doctors && (
           <div>
             <h4>
-              Dr.{doctors.firstName} {doctors.lastName}
+              {doctors.firstName} {doctors.lastName}
             </h4>
             <h4>Fees : {doctors.feesPerCunsaltation}</h4>
             <h4>

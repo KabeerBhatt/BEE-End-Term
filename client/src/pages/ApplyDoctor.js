@@ -46,7 +46,7 @@ const ApplyDoctor = () => {
   };
   return (
     <Layout>
-      <h1 className="text-center">Apply Doctor</h1>
+      <h1 className="text-center">Apply for gas supplier </h1>
       <Form layout="vertical" onFinish={handleFinish} className="m-3">
         <h4 className="">Personal Details : </h4>
         <Row gutter={20}>
@@ -82,17 +82,17 @@ const ApplyDoctor = () => {
           </Col>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
-              label="Email"
+              label="Age"
               name="email"
               required
               rules={[{ required: true }]}
             >
-              <Input type="email" placeholder="your email address" />
+              <Input type="text" placeholder="Age" />
             </Form.Item>
-          </Col>
-          <Col xs={24} md={24} lg={8}>
-            <Form.Item label="Website" name="website">
-              <Input type="text" placeholder="your website" />
+          </Col> 
+           <Col xs={24} md={24} lg={8}>
+            <Form.Item label="Gas Agency" name="website">
+              <Input type="text" placeholder="Gas Agency Place" />
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>
@@ -102,7 +102,7 @@ const ApplyDoctor = () => {
               required
               rules={[{ required: true }]}
             >
-              <Input type="text" placeholder="your clinic address" />
+              <Input type="text" placeholder="your shop address" />
             </Form.Item>
           </Col>
         </Row>
@@ -110,32 +110,32 @@ const ApplyDoctor = () => {
         <Row gutter={20}>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
-              label="Specialization"
+              label=" Gas Type"
               name="specialization"
               required
               rules={[{ required: true }]}
             >
-              <Input type="text" placeholder="your specialization" />
+              <Input type="text" placeholder="Gas type" />
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
-              label="Experience"
+              label="Years worked for"
               name="experience"
               required
               rules={[{ required: true }]}
             >
-              <Input type="text" placeholder="your experience" />
+              <Input type="text" placeholder="your working years" />
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>
             <Form.Item
-              label="Fees Per Cunsaltation"
+              label="Price"
               name="feesPerCunsaltation"
               required
               rules={[{ required: true }]}
             >
-              <Input type="text" placeholder="your contact no" />
+              <Input type="text" placeholder="Price of 1 cylinder" />
             </Form.Item>
           </Col>
           <Col xs={24} md={24} lg={8}>

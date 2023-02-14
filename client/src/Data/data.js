@@ -10,13 +10,19 @@ export const userMenu = [
     icon: "fa-solid fa-list",
   },
   {
-    name: "Apply Doctor",
+    name: "Apply for gas supplier",
     path: "/apply-doctor",
     icon: "fa-solid fa-user-doctor",
   },
+  // {
+  //   name: "Profile",
+  //   path: "/profile",
+  //   icon: "fa-solid fa-user",
+  // },
   {
-    name: "Profile",
-    path: "/profile",
+    name: "Booking",
+    path:"/doctor/book-appointment/63e9ceed12f7dbc277649c90",
+    // path: `/doctor/profile/${user?._id}`,
     icon: "fa-solid fa-user",
   },
 ];
@@ -30,7 +36,7 @@ export const adminMenu = [
   },
 
   {
-    name: "Doctors",
+    name: "Gas Suppliers",
     path: "/admin/doctors",
     icon: "fa-solid fa-user-doctor",
   },
@@ -39,9 +45,9 @@ export const adminMenu = [
     path: "/admin/users",
     icon: "fa-solid fa-user",
   },
-  {
-    name: "Profile",
-    path: "/profile",
-    icon: "fa-solid fa-user",
-  },
+  // {
+  //   name: "Profile",
+  //   path: "/profile",
+  //   icon: "fa-solid fa-user",
+  // },
 ];

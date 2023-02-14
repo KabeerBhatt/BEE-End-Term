@@ -36,7 +36,7 @@ const Users = () => {
       dataIndex: "email",
     },
     {
-      title: "Doctor",
+      title: "Gas Supplier",
       dataIndex: "isDoctor",
       render: (text, record) => <span>{record.isDoctor ? "Yes" : "No"}</span>,
     },
